@@ -93,6 +93,13 @@ jobs:
         with:
           name: juno-ubuntu-latest
           path: release
+      
+      - name: Debug
+        run: |
+          ls release
+          ls release/juno-windows-latest
+          ls release/juno-ubuntu-latest
+          ls release/juno-macos-latest
         
       - name: Publish Release
         uses: softprops/action-gh-release@v1
